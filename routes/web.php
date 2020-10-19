@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// ブログの一覧画面表示
+// Route::resource('/', [BlogController::class, 'showList']);
+Route::get('/','App\Http\Controllers\BlogController@showList');
